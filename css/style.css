@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+.error-text{
+    color: red;
+    font-size: 14px;
+
+}
+
+/*email*/
+
+
+#email{
+    width: 30%;
+
+}
+.input-box{
+    position: relative;
+}
+#form.invalid .input-box :before{
+    content: '\2612';
+    position: absolute;
+    right: 20px;
+
+
+}
+#form.valid .input-box :before{
+    content: '\2611';
+    position: absolute;
+    right: 20px;
+
+
+}
+
+
+/* ცალკე დაიკავოს ჰორიზონტალური ხაზი-დისპლეი ბლოკით */
+#text{
+    display: block;  
+}
+
+
+#top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: azure;
+}
+
+body{
+    height: 1800px;
+}
+
+input{
+   
+    padding-top: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 30px;
+    background-color: azure;
+
+}
+    .registration{
+        margin-left: 50%;
+        padding-top: 30px;
+    }
+    #form{
+        margin-top: 10px;
+        margin-left: 50%;
+    }
+    .password-field{
+        margin-top: 10px;
+        margin-left: 50%;  
+    }
+    .female{
+        margin-left: 160px;
+    }
+    

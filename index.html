@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>validation-form</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  />
+
+</head>
+<body>
+
+<form action="" method="POST" id="registration" class="registration">
+    <div>
+        <label for="username">Username</label>
+        <input 
+        type="text"
+        id="username"
+        name="usernameValue"
+        placeholder="username.."
+        />
+        <div class="error-text" id="error_usernameValue"></div>
+
+    </div>    
+
+    <div>
+        <label for="passw">Password</label>
+        <input 
+        type="password"
+        id="passw"
+        name="password"
+        placeholder="password.."/>
+
+
+    </div>
+
+    <div>
+        <label for="passw2">Repeat password</label>
+        <input 
+        type="password"
+        id="passw2"
+        name="password2"
+        placeholder="repeat password.."/>
+        <div class="error-text" id="error_password"></div>
+    </div>
+    <div class="error-text" id="error_password2">
+
+    </div>
+
+    <div>
+        <input type="radio" name="gender" />
+        <label for="">Male</label>
+        <input type="radio" class="female" name="gender"/>
+        <label for="">Female</label>
+        <div class="error-text" id="error_gender"></div>
+    </div>
+    <div>
+        <input type="checkbox" name="agree" id="agree"/>
+        <label for="">I agree terms and conditions</label>
+        <div class="error-text" id="error_agree"></div>
+    </div>
+    <button type="submit">Submit form</button>
+</form>
+
+
+<div class="password-field">
+    <input type="password" id="showhide" name="mypassw"/>
+    <i id="toggleIcon" class="fa-solid fa-eye"></i>
+
+</div>
+
+<form action="" id="form">
+    <div class="input-box">
+      <input type="email" id="email" onkeydown="validationEmail()" />
+      <span id="text"></span>
+    </div>
+    <button>send</button>
+</form>
+
+<button id="top">scroll</button>
+
+
+ <script src="script.js"></script>   
+</body>
+</html>
